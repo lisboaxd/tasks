@@ -1,9 +1,284 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Task - Organize suas tarefas</title>
-</head>
-<body>
-<h1>Organize suas tarefas</h1>
-</body>
+<html lang="pt-br">
+	<head>
+
+		<!--- Basic Page Needs and SEO tags
+		================================================== -->
+		<meta charset="utf-8">
+		<title>Tasks</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="keywords" content="">
+
+		<!-- Google
+		================================================== -->
+
+
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- CSS
+		================================================== -->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+		<!--Import Google Icon Font-->
+      	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      	
+
+		<!-- Script
+		================================================== -->
+		<script src="js/datetime.js"></script>
+
+		<!-- Smartlook -->
+
+		<!-- Smartlook -->
+
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="favicon.ico">
+	</head>
+
+	<body>
+		<!-- Header ====================== -->		
+		<header>			
+		 <nav>
+		    <div class="nav-wrapper">
+		      <div class="container">
+			      <a href="#" class="brand-logo"><img src="img/tasks-logo.png" alt="Tasks"></a>
+			      <ul id="nav-mobile" class="right hide-on-med-and-down">			
+				      <li title="Tarefas Arquivadas"><a href="#"><i class="material-icons prefix">done_all</i></a></li>
+				      <li title="Tarefas Excluídas"><a href="#"><i class="material-icons prefix">delete</i></a></li>
+				      
+				      <!--
+				      <li><a href="#"><i class="material-icons prefix">view_list</i></a></li>
+
+					  <li title="Configurações"><a href="#"><i class="material-icons prefix">settings</i></a></li>
+					  -->
+
+			      </ul>
+			   </div>
+		    </div>
+		  </nav>
+		</header>
+		<!-- Header ====================== -->
+
+		<!-- Container ====================== -->
+		<div class="container">
+			<section>
+				<div class="card-panel hoverable"> 
+					<h5>Adicionar tarefa</h5>
+					  <div class="row">
+					    <form class="col s12">
+					      <div class="row">
+
+
+					       <div class="input-field col s3">
+					          <!-- <i class="material-icons prefix">description</i> -->
+					          <input id="icon_prefix" type="text" class="validate">
+					          <label for="icon_prefix">Tarefa</label>
+					        </div>
+
+					       <div class="input-field col s2">
+					          <!-- <i class="material-icons prefix">label</i> -->
+					          <input id="icon_prefix" type="text" class="validate">
+					          <label for="icon_prefix">Marcador</label>
+					        </div>
+
+					       <div class="input-field col s2">
+					          <!-- <i class="material-icons prefix">today</i> -->
+					          <input id="icon_prefix" type="text" class="validate">
+					          <label for="icon_prefix">Data</label>
+					        </div>
+
+					       <div class="input-field col s2">
+					          <!-- <i class="material-icons prefix">schedule</i> -->
+					          <input id="icon_prefix" type="text" class="validate">
+					          <label for="icon_prefix">Iniciar</label>
+					        </div>
+
+					        <div class="input-field col s2">
+					          <!-- <i class="material-icons prefix">alarm_on</i> -->
+					          <input id="icon_prefix" type="text" class="validate">
+					          <label for="icon_prefix">Terminar</label>
+					        </div>			         
+
+
+					        <div class="input-field col s1">
+					          <a class="btn-floating"><i class="material-icons">add</i></a>				          
+					        </div>
+					      </div>
+					   </form>
+					</div>
+				</div>
+			</section>
+
+			<!-- Section com a listagem das tarefas -->
+			<section>
+			    <div class="row">
+			      
+			      <div class="col s12 m6 l4">		          
+					
+					  <div class="card blue-grey darken-1 hoverable">
+			            <div class="card-content white-text">
+			              <span class="card-title">
+						      <div class="chip">						    
+							    #Pessoal, Corporativo, Educação
+							  </div>												  
+			              </span>
+			              <b>Buscar Laura na faculdade</b>
+			              <p>
+			              	<br /><b>Data:</b> 10/01/2017
+			              	<br /><b>Local:</b> UNA
+			              	<br /><b>Horário:</b> 10:00 às 11:30
+			              </p>
+			            </div>
+			            <div class="card-action">			            
+			              <a href="#">Arquivar</a>
+			              <a href="#">Excluir</a>
+			            </div>
+			          </div>
+
+				
+				  </div>
+			      
+			      <div class="col s12 m6 l4">
+
+					  <div class="card blue-grey darken-1 hoverable">
+			            <div class="card-content white-text">
+			              <span class="card-title">
+						      <div class="chip">						    
+							    #Pessoal, Corporativo, Educação
+							  </div>												  
+			              </span>
+			              <b>Buscar Laura na faculdade</b>
+			              <p>
+			              	<br /><b>Data:</b> 10/01/2017
+			              	<br /><b>Local:</b> UNA
+			              	<br /><b>Horário:</b> 10:00 às 11:30
+			              </p>
+			            </div>
+			            <div class="card-action">			            
+			              <a href="#">Arquivar</a>
+			              <a href="#">Excluir</a>
+			            </div>
+			          </div>
+
+			      </div>
+
+
+			      <div class="col s12 m6 l4">
+
+					  <div class="card blue-grey darken-1 hoverable">
+			            <div class="card-content white-text">
+			              <span class="card-title">
+						      <div class="chip">						    
+							    #Pessoal, Corporativo, Educação
+							  </div>												  
+			              </span>
+			              <b>Buscar Laura na faculdade</b>
+			              <p>
+			              	<br /><b>Data:</b> 10/01/2017
+			              	<br /><b>Local:</b> UNA
+			              	<br /><b>Horário:</b> 10:00 às 11:30
+			              </p>
+			            </div>
+			            <div class="card-action">			            
+			              <a href="#">Arquivar</a>
+			              <a href="#">Excluir</a>
+			            </div>
+			          </div>
+
+			      </div>
+    			</div>
+
+
+    			<!--
+  				<div class="card-panel hoverable"> 
+
+					<h5>Minhas tarefas</h5>
+
+					<div class="row">
+				      	<table class="responsive-table highlight">
+						     <thead>
+						          <tr>
+						              <th>
+							                <form action="#">
+											    <p>
+											      <input type="checkbox" id="indeterminate-checkbox" />
+											      <label for="indeterminate-checkbox"></label>
+											    </p>
+										    </form>
+						              </th>
+						              <th><h5>Tarefa</h5></th>
+						              <th><h5>Marcador</h5></th>						              
+						              <th><h5>Data</h5></th>
+						              <th><h5>Hora</h5></th>
+						          </tr>
+						        </thead>
+
+						        <tbody>
+						          <tr>
+						            <td>
+						              <form action="#">
+									    <p>
+									      <input type="checkbox" id="indeterminate-checkbox1" />
+									      <label for="indeterminate-checkbox1"></label>
+									    </p>
+									  </form>
+						            </td>
+						            <td>Arrumar cozinha</td>
+						            <td>#Casa, #Pessoal</td>
+						            <td>22/01/2018</td>
+						            <td>10:00 - 11:00</td>
+						          </tr>
+						        </tbody>
+						   </table>
+				      </div>
+				</div>
+				-->
+
+				</section>
+				<!-- Section com a listagem das tarefas -->
+			
+		</div>
+		<!-- Container ====================== -->
+		
+
+		<!-- Footer ====================== -->
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <img src="img/tasks-logo.png" alt="Tasks">
+                <p class="grey-text text-lighten-4">Use Tasks para gerenciar suas tarefas. Tasks BETA™ é uma aplicação web desenvolvida com ❤ por estudantes.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Desenvolvedores</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Guilherme Albert</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Mateus Nobre</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Vitor Assis</a></li>                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            	© 2017 Copyright Tasks. Todos os direitos devidamente reservados.            
+            </div>
+          </div>
+        </footer>
+        <!-- Footer ====================== -->
+
+		<!-- Script
+		================================================== -->
+	      
+	    <!--Import jQuery before materialize.js-->
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	    <script type="text/javascript" src="js/materialize.min.js"></script>	
+	</body>
 </html>
+
+
+
