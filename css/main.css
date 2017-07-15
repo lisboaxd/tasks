@@ -5,3 +5,7 @@
 	background: #ccc;
 
 }
+.mdl-grid > div {
+	background: #6c6c6c;
+	color: white;
+}
